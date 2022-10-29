@@ -1,0 +1,15 @@
+.card{
+    background: linear-gradient(0deg, rgba(71,218,228,1) 0%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%);
+    padding: 2%;
+    margin: 2%;
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+}
+
+.card-header{
+    font-size: 1.7em;
+}
+
+.card-body{
+    font-size: 1.2em;
+}
