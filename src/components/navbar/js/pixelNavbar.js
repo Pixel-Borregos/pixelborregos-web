@@ -1,8 +1,6 @@
 import "../style/pixelNavbar.css";
 import React from "react";
 import { Navbar, Image } from "react-bootstrap";
-import {NavLink} from 'react-router-dom';
-import PixelNavbarElement from "./pixelNavbarElement";
 import { Nav } from "react-bootstrap";
 import "../style/pixelNavbarElement.css";
 
@@ -12,7 +10,7 @@ class PixelNavbar extends React.Component
     render()
     {
         return(
-            <Navbar id="PixelNavbar" fixed-top expand="lg" className ="pixelNavbarBackground">
+            <Navbar id="PixelNavbar" expand="lg" className ="pixelNavbarBackground">
                 <Image height="60vh" width = "130vw" src={"/images/logo.png"}/>
                 <h2 className="pixelNavbarText">Pixel Borregos</h2>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
