@@ -6,7 +6,7 @@ class NewsBody extends React.Component{
     render(){
         let news = []
         for(let i =0; i < 10; i++){
-            news.push(<Row>
+            news.push(<Row key={i.toString()}>
                 <Col>
                     <NewsPreview
                         title="Pixel Borregos and 48toPlay"
