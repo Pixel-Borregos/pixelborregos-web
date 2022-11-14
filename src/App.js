@@ -31,7 +31,7 @@ class App extends React.Component
           <Route path="/" element = {<AboutUsBody />} />
           <Route path="/Projects"  element = {<ProjectBody />} />
           <Route path="/News" element = {<NewsBody />} />
-          <Route path="/ContactUs" exact component = {<ContactUsBody />}/>
+          <Route path="/ContactUs" element = {<ContactUsBody />}/>
         </Routes>
         </Container>
       </Router>
