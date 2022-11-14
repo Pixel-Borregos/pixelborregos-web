@@ -1,29 +1,67 @@
-import "../style/pixelNavbar.css";
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Image } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
-import "../style/pixelNavbarElement.css";
+import '../style/NavBar.css';
 
-class PixelNavbar extends React.Component
-{
-    
-    render()
-    {
-        return(
-            <Navbar id="PixelNavbar" expand="lg" className ="pixelNavbarBackground">
-                <Image height="60vh" width = "130vw" src={"/images/logo.png"}/>
-                <h2 className="pixelNavbarText">Pixel Borregos</h2>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className = "pixelNavbarElements topnav">
-                        <Nav.Link href="/" className="pixelNavbarElementText" >Nosotros</Nav.Link>
-                        <Nav.Link href="/Projects" className="pixelNavbarElementText" >Proyectos</Nav.Link>
-                        <Nav.Link href="/News" className="pixelNavbarElementText" >Noticias</Nav.Link>
-                        <Nav.Link href="/ContactUs" className="pixelNavbarElementText" >Contáctanos</Nav.Link>
-                </Navbar.Collapse>
-            </Navbar>
-        )
-    }
-    
+function NavBar1 () {
+  const [click, setClick] = useState(false);
+  const[button,setButton] = useState(true)
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+const showButton = () => {
+  if(window.innerWidth <= 960){
+    setButton(false);
+  }
+  else{
+    setButton(true);
+  }
+};
+
+useEffect(() => {
+  showButton()
+},[]);
+
+window.addEventListener('resize', showButton);
+
+  return (
+    <>
+        <nav className="navbar">
+            <div className="navbar-container">
+                <Nav.Link href="/Landing" className='nav-links' onClick={closeMobileMenu}>
+                  Pixel Borregos
+                </Nav.Link>
+                <div className='menu-icon' onClick={handleClick}>
+                  <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                  <li className='nav-item'>
+                    <Nav.Link href='/' className='nav-links' onClick={closeMobileMenu}>
+                      About us
+                    </Nav.Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Nav.Link href='/News' className='nav-links' onClick={closeMobileMenu}>
+                      Newsfeed
+                    </Nav.Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Nav.Link href='/ContactUs' className='nav-links' onClick={closeMobileMenu}>
+                      Contact us
+                    </Nav.Link>
+                  </li>
+                  <li className='nav-item'>
+                    <Nav.Link href='/Projects' className='nav-links' onClick={closeMobileMenu}>
+                      Projects
+                    </Nav.Link>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    </>
+  )
 }
 
-export default PixelNavbar;
+export default NavBar1
