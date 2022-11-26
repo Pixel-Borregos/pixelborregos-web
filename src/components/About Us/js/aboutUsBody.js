@@ -10,7 +10,8 @@ class AboutUsBody extends React.Component{
     render(){
         return(
             <Container fluid>
-                <Container fluid style={{background:"linear-gradient(90deg, rgba(64,31,49,1) 39%, rgba(94,32,66,1) 70%, rgba(143,30,86,1) 98%)"}}>
+                <video src='/videos/P3_AdobeExpress.mp4' autoPlay loop muted />
+                <Container>
                     
                     
                     <Row>
@@ -24,9 +25,11 @@ class AboutUsBody extends React.Component{
                                         "eventos para la comunidad estudiantil que promueven una cultura de\n"+ 
                                         "videojuegos."}
 
-                                backgroundColor={{background:'transparent'}}
-                                titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
-                                textColor = "linear-gradient(9deg, rgba(60,212,226,1) 22%, rgba(66,178,198,1) 50%, rgba(60,212,226,1) 78%)"
+                                backgroundColor={{background:'rgba(0,0,0,.5)'}}
+                                titleColor = "#fff"
+                                textColor = "#fff"
+                                // titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
+                                // textColor = "linear-gradient(9deg, rgba(60,212,226,1) 22%, rgba(66,178,198,1) 50%, rgba(60,212,226,1) 78%)"
                                 
                             /> 
                         </Col> 
@@ -41,9 +44,11 @@ class AboutUsBody extends React.Component{
                                         "sus proyectos de calidad, impacto en la comunidad estudiantil\n"+
                                         "y creación de talento."
                                 }
-                                backgroundColor={{background:"845a8b"}}
-                                titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
-                                textColor = "linear-gradient(9deg, rgba(60,212,226,1) 22%, rgba(66,178,198,1) 50%, rgba(60,212,226,1) 78%)"
+                                backgroundColor={{background:"rgba(0,0,0,.5)"}}
+                                titleColor = "#fff"
+                                textColor = "#fff"
+                                // titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
+                                // textColor = "linear-gradient(9deg, rgba(60,212,226,1) 22%, rgba(66,178,198,1) 50%, rgba(60,212,226,1) 78%)"
                             /> 
                         </Col>
                     </Row>
@@ -51,7 +56,9 @@ class AboutUsBody extends React.Component{
                     <Row>
                         <Col>
                             <AboutUsTeamBody
-                                titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
+                                backgroundColor={{background:"rgba(0,0,0,.5)"}}
+                                titleColor = "#fff"
+                                // titleColor = "-webkit-linear-gradient(90deg, rgba(71,218,228,1) 23%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%)"
                                 />
                         </Col>
                     </Row>

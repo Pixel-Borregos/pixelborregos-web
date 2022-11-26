@@ -33,7 +33,9 @@ function LogIn(){
 
         return(
             <div >
+              <video src='/videos/Sign.mp4' autoPlay loop muted />
                 <div>
+                
             <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
               <MDBTabsItem>

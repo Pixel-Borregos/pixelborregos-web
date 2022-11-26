@@ -31,6 +31,7 @@ window.addEventListener('resize', showButton);
         <nav className="navbar">
             <div className="navbar-container">
                 <Nav.Link href="/Landing" className='nav-links' onClick={closeMobileMenu}>
+                <img src='/images/logo.png' width={90} height={50} />
                   Pixel Borregos
                 </Nav.Link>
                 <div className='menu-icon' onClick={handleClick}>
