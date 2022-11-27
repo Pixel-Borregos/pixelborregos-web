@@ -1,0 +1,13 @@
+.pixelNavbarBackground{
+    background: linear-gradient(180deg, rgba(40,101,133,1) 39%, rgba(70,137,162,1) 70%);
+}
+
+.pixelNavbarText{
+    font-family: 'DotGothic16', sans-serif;
+    color: white;
+}
+
+.pixelNavbarElements{
+    justify-content: space-around;
+    text-align: center;
+}

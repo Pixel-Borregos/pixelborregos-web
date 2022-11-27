@@ -5,6 +5,7 @@ import {collection, addDoc, setDoc} from "firebase/firestore";
 import { initializeApp } from 'firebase/app';
 
 import PixelNavbar from './components/navbar/js/pixelNavbar';
+import AdminNavbar from './components/navbarAdmin/js/pixelNavbar';
 import AboutUsBody from './components/About Us/js/aboutUsBody';
 import { Container } from 'react-bootstrap';
 import "./App.css";
@@ -27,6 +28,7 @@ class App extends React.Component
     return (
       <Router>
         <PixelNavbar/>
+        {/* <AdminNavbar /> */}
         <Routes>
           <Route path="/" element = {<AboutUsBody />} />
           <Route path="/Projects"  element = {<ProjectBody />} />
