@@ -12,6 +12,7 @@ import "./App.css";
 import ProjectBody from './components/Projects/js/projectsBody';
 // import ProjectBigBody from './components/Projects/js/projectsBigBody';
 import NewsBody from './components/News/js/newsBody';
+import NewsAdmin from './components/NewsAdmin/js/newsBody';
 import Landing from './components/Landing/js/landingBody';
 import ContactUsBody from './components/Contact Us/js/contactUsBody';
 import LogIn from './components/Admin/js/LogIn';
@@ -33,7 +34,8 @@ class App extends React.Component
           <Route path="/" element = {<AboutUsBody />} />
           <Route path="/Projects"  element = {<ProjectBody />} />
           {/* ProjectBigBody */}
-          <Route path="/News" element = {<NewsBody />} />
+          {/* <Route path="/News" element = {<NewsBody />} /> */}
+          <Route path="/News" element = {<NewsAdmin />} />
           <Route path="/ContactUs" element = {<ContactUsBody />}/>
           <Route path="/LogIn" element = {<LogIn />} />
           <Route path="/Landing"element = {<Landing />} />
