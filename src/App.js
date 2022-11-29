@@ -16,6 +16,7 @@ import NewsAdmin from './components/NewsAdmin/js/newsBody';
 import Landing from './components/Landing/js/landingBody';
 import ContactUsBody from './components/Contact Us/js/contactUsBody';
 import LogIn from './components/Admin/js/LogIn';
+import AdminActionsBody from './components/AdminActions/AdminActionsBody';
 import AddDocument, { DeleteDocument, ReadDocument, UpdateDocument } from './js/db/dbOperations';
 import NewsBigBody
  from './components/News/js/newsBigBody';
@@ -30,7 +31,6 @@ class App extends React.Component
     return (
       <Router>
         <PixelNavbar/>
-        {/* <AdminNavbar /> */}
         <Routes>
           <Route path="/" element = {<AboutUsBody />} />
           <Route path="/Projects"  element = {<ProjectBody />} />
@@ -40,6 +40,7 @@ class App extends React.Component
           <Route path="/ContactUs" element = {<ContactUsBody />}/>
           <Route path="/LogIn" element = {<LogIn />} />
           <Route path="/Landing"element = {<Landing />} />
+          <Route path="/Admin/Actions"element = {<AdminActionsBody />} />
         </Routes>
       </Router>
     );

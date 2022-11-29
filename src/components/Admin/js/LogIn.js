@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Container } from "react-bootstrap";
 import VideoPlayer from "react-background-video-player";
+import Button from "react-bootstrap";
 
 import '../style/Login.css';
 import {
@@ -31,11 +32,13 @@ function LogIn(){
         setJustifyActive(value);
     };
 
+    const style = { width: '200px' }
+
         return(
             <div >
               <video src='/videos/Sign.mp4' autoPlay loop muted />
                 <div>
-                
+                <span></span>
             <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
               <MDBTabsItem>
@@ -84,8 +87,8 @@ function LogIn(){
                   <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
                   <a href="!#">Forgot password?</a>
                 </div>
-      
-                <MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
+
+                <a href='/Admin/Actions'><button floating size='lg'>Sign in</button></a>
                 <p className="text-center">Not a member? <a href="#!">Register</a></p>
       
               </MDBTabsPane>
