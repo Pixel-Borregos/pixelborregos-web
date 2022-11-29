@@ -5,7 +5,7 @@ import CardHeader from "react-bootstrap/esm/CardHeader";
 import AboutUsTeamCard from "./ProjectsCard";
 import "../style/aboutUsTeamBody.css"
 
-class AboutUsTeamBody extends React.Component{
+class ProjectCardBody extends React.Component{
 
     render(){
 
@@ -36,4 +36,4 @@ class AboutUsTeamBody extends React.Component{
 
 }
 
-export default AboutUsTeamBody;
+export default ProjectCardBody;

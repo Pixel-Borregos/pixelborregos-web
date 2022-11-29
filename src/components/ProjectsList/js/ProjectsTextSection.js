@@ -3,7 +3,7 @@ import {Row,Col, Container} from "react-bootstrap";
 
 import "../style/aboutUsTextSection.css";
 
-class AboutUsTextSection extends React.Component
+class ProjectsTextSection extends React.Component
 {
 
     render(){
@@ -47,4 +47,4 @@ class AboutUsTextSection extends React.Component
         )
     }
 }
-export default AboutUsTextSection;
+export default ProjectsTextSection;

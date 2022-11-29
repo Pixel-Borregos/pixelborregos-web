@@ -4,7 +4,7 @@ import CardHeader from "react-bootstrap/esm/CardHeader"
 
 import "../style/aboutUsTeamCard.css"
 
-class AboutUsTeamCard extends React.Component{
+class ProjectCard extends React.Component{
 
     render(){
 
@@ -33,37 +33,32 @@ class AboutUsTeamCard extends React.Component{
         }
 
         return(
-            <Col style={{justifyContent:'center'}} xs={12} sm={6} md={4}>
                 <Card style={{marginBottom:"10%"}}>
                     <Card.Img src="/images/aboutus.jpg"/>
                     <CardHeader style={titleStyle}>
-                        {this.props.name}
+                        {this.props.title}
                     </CardHeader>
                     <Card.Body>
-                        <h3 style={roleStyle}>{this.props.role}</h3>
+                        <h3 style={roleStyle}>{this.props.genre}</h3>
                         <hr></hr>
                         <h5 style = {textStyle}>
-                            {this.props.descriptionA}
+                            {this.props.concept}
                         </h5>
-                        <br></br>
-                        <h5 style = {textStyle}>
-                            {this.props.descriptionB}
-                        </h5>
-                        <Button> 
-                        <h4 style = {buttonTextStyle}>
-                            Pruebalo en Itch.io
-                        </h4>
-                    </Button>
+
+                        <a hidden={this.props.itch == null}> 
+                            <h4 style = {buttonTextStyle}>
+                                Pruebalo en Itch.io
+                            </h4>
+                        </a>
                     <br></br><br></br>
-                    <Button > 
-                        <h4 style = {buttonTextStyle}>
+                    <a hidden = {this.props.notion == null}> 
+                        <h4 style = {buttonTextStyle} >
                             Checa la documentación
                         </h4>
-                    </Button>
+                    </a>
                     </Card.Body>
                 </Card>
-            </Col>
         )
     }
 }
-export default AboutUsTeamCard;
+export default ProjectCard;

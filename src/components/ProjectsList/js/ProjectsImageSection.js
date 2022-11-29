@@ -1,7 +1,7 @@
 import React from "react";
 import {Container,Row,Col, Image} from "react-bootstrap";
 
-class AboutUsImageSection extends React.Component{
+class ProjectImageSection extends React.Component{
 
     render(){
         return(
@@ -19,4 +19,4 @@ class AboutUsImageSection extends React.Component{
 
 }
 
-export default AboutUsImageSection;
+export default ProjectImageSection;
