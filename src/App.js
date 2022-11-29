@@ -17,7 +17,8 @@ import Landing from './components/Landing/js/landingBody';
 import ContactUsBody from './components/Contact Us/js/contactUsBody';
 import LogIn from './components/Admin/js/LogIn';
 import AddDocument, { DeleteDocument, ReadDocument, UpdateDocument } from './js/db/dbOperations';
-
+import NewsBigBody
+ from './components/News/js/newsBigBody';
 class App extends React.Component 
 { 
   constructor(props){
@@ -35,7 +36,7 @@ class App extends React.Component
           <Route path="/Projects"  element = {<ProjectBody />} />
           {/* ProjectBigBody */}
           {/* <Route path="/News" element = {<NewsBody />} /> */}
-          <Route path="/News" element = {<NewsAdmin />} />
+          <Route path="/News" element = {<NewsBigBody />} />
           <Route path="/ContactUs" element = {<ContactUsBody />}/>
           <Route path="/LogIn" element = {<LogIn />} />
           <Route path="/Landing"element = {<Landing />} />

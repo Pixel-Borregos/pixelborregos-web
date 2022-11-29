@@ -17,6 +17,7 @@ export async function CreateDocument(targetCollection,docData){
     }
 }
 
+
 export async function ReadDocument(targetCollection){
     try{
         let result = null;
