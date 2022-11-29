@@ -6,8 +6,8 @@ import Stack from '@mui/material/Stack';
 export default function IconLabelButtons() {
     return (
       <Stack direction="row" spacing={2}>
-        <Button variant="outlined" startIcon={<SendIcon />} href='/Admin/UpdateNews/EditNews'>
-          Edit this News element
+        <Button variant="outlined" startIcon={<SendIcon />} href='/Admin/EditProject'>
+          Edit this Project
         </Button>
       </Stack>
     );

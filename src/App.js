@@ -25,6 +25,9 @@ import CreateProject from './components/AdminActions/js/ProjectsBodyCreate';
 import UpdateProject from './components/AdminActions/js/ProjectsBodyUpdate';
 import DeleteNews from './components/AdminActions/js/NewsBodyDelete/js/newsBigBody';
 import UpdateElementNews from './components/AdminActions/js/NewsBodyUpdate/js/newsBigBody';
+import ProjectsBodyDelete from './components/AdminActions/js/ProjectsListDelete/js/ProjectsBody';
+import ProjectsBodyUpdate from './components/AdminActions/js/ProjectsBodyUpdate/js/ProjectsBody';
+
 class App extends React.Component 
 { 
   constructor(props){
@@ -51,7 +54,9 @@ class App extends React.Component
           <Route path="/Admin/UpdateNews" element = {<UpdateElementNews />} />
           <Route path="/Admin/UpdateNews/EditNews" element = {<UpdateNews />} />
           <Route path="/Admin/CreateProject" element = {<CreateProject />} />
-          <Route path="/Admin/UpdateProject" element = {<UpdateProject />} />
+          <Route path="/Admin/UpdateProject" element = {<ProjectsBodyUpdate />} />
+          <Route path="/Admin/DeleteProject" element = {<ProjectsBodyDelete />} />
+          <Route path="/Admin/EditProject" element = {<UpdateProject />} />
         </Routes>
       </Router>
     );

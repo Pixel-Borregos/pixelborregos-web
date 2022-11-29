@@ -30,7 +30,7 @@ class AdminActionsBody extends React.Component{
                 <Dropdown.Menu>
                     <Dropdown.Item href="/Admin/CreateProject">Create</Dropdown.Item>
                     <Dropdown.Item href="/Admin/UpdateProject">Update</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Delete</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/DeleteProject">Delete</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             </span>
