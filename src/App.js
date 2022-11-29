@@ -16,10 +16,14 @@ import NewsAdmin from './components/NewsAdmin/js/newsBody';
 import Landing from './components/Landing/js/landingBody';
 import ContactUsBody from './components/Contact Us/js/contactUsBody';
 import LogIn from './components/Admin/js/LogIn';
-import AdminActionsBody from './components/AdminActions/AdminActionsBody';
+import AdminActionsBody from './components/AdminOptions/js/AdminOptionsBody';
 import AddDocument, { DeleteDocument, ReadDocument, UpdateDocument } from './js/db/dbOperations';
-import NewsBigBody
- from './components/News/js/newsBigBody';
+import NewsBigBody from './components/News/js/newsBigBody';
+import CreateNews from './components/AdminActions/js/NewsBodyCreate';
+import UpdateNews from './components/AdminActions/js/NewsBodyUpdate';
+import CreateProject from './components/AdminActions/js/ProjectsBodyCreate';
+import UpdateProject from './components/AdminActions/js/ProjectsBodyUpdate';
+import DeleteNews from './components/AdminActions/js/NewsBodyDelete/js/newsBigBody';
 class App extends React.Component 
 { 
   constructor(props){
@@ -37,10 +41,15 @@ class App extends React.Component
           {/* ProjectBigBody */}
           {/* <Route path="/News" element = {<NewsBody />} /> */}
           <Route path="/News" element = {<NewsBigBody />} />
+          <Route path="/Admin/DeleteNews" element = {<DeleteNews />} />
           <Route path="/ContactUs" element = {<ContactUsBody />}/>
           <Route path="/LogIn" element = {<LogIn />} />
           <Route path="/Landing"element = {<Landing />} />
           <Route path="/Admin/Actions"element = {<AdminActionsBody />} />
+          <Route path="/Admin/CreateNews"element = {<CreateNews />} />
+          <Route path="/Admin/UpdateNews"element = {<UpdateNews />} />
+          <Route path="/Admin/CreateProject"element = {<CreateProject />} />
+          <Route path="/Admin/UpdateProject"element = {<UpdateProject />} />
         </Routes>
       </Router>
     );

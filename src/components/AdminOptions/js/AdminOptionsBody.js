@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
-import './AdminActionsBody.css'
+import '../style/AdminOptionsBody.css'
 
 class AdminActionsBody extends React.Component{
     render() {
@@ -15,9 +15,9 @@ class AdminActionsBody extends React.Component{
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Create</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Update</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Delete</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/CreateNews">Create</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/UpdateNews">Update</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/DeleteNews">Delete</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             </span>
@@ -28,8 +28,8 @@ class AdminActionsBody extends React.Component{
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Create</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Update</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/CreateProject">Create</Dropdown.Item>
+                    <Dropdown.Item href="/Admin/UpdateProject">Update</Dropdown.Item>
                     <Dropdown.Item href="#/action-3">Delete</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>

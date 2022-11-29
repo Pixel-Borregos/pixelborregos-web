@@ -1,0 +1,51 @@
+.accordion{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.accordion-button {
+    background: linear-gradient(0deg, rgba(71,218,228,1) 0%, rgba(45,140,170,1) 53%, rgba(40,101,133,1) 72%);
+    color: black;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed){
+    height: 0px;
+    font-size: 0px;
+    color:transparent;
+}
+
+.accordion-body{
+    background: linear-gradient(0deg, rgba(71,218,228,1) 0%, rgba(45,140,170,1) 10%, rgba(40,101,133,1) 72%);
+}
+  
+.accordion-button:focus {
+    box-shadow: none;
+  }
+  
+.accordion-item{
+    background-color: transparent;
+}
+
+.accordion-body{
+    color:white;
+    text-align: center;
+}
+
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color:black;
+}
+
+div{
+    color:black;
+    font-weight: 550;
+}
+
