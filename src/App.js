@@ -9,7 +9,7 @@ import AdminNavbar from './components/navbarAdmin/js/pixelNavbar';
 import AboutUsBody from './components/About Us/js/aboutUsBody';
 import { Container } from 'react-bootstrap';
 import "./App.css";
-import ProjectBody from './components/Projects/js/projectsBody';
+import ProjectBody from './components/ProjectsList/js/ProjectsBody';
 // import ProjectBigBody from './components/Projects/js/projectsBigBody';
 import NewsBody from './components/News/js/newsBody';
 import NewsAdmin from './components/NewsAdmin/js/newsBody';

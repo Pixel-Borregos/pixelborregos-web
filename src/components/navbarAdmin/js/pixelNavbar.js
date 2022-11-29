@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Image } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Container } from 'react-bootstrap';
 import '../style/NavBar.css';
 
 function NavBar1 () {
@@ -28,7 +29,7 @@ useEffect(() => {
 window.addEventListener('resize', showButton);
 
   return (
-    <>
+    <Container>
         <nav className="navbar">
             <div className="navbar-container">
                 <Nav.Link href="/Landing" className='nav-links' onClick={closeMobileMenu}>
@@ -62,7 +63,7 @@ window.addEventListener('resize', showButton);
                 </ul>
             </div>
         </nav>
-    </>
+    </Container>
   )
 }
 

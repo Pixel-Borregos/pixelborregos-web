@@ -1,6 +1,12 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 
+//The Great Downpour
+//HD2D Real-Time Action RPG
+//La apartada isla de Omna es lanzada al borde de la destrucción. Cuando el final de la temporada de tempestades llega sin señales de que el diluvio se detenga. Mientras tanto, la noche de Luna Roja se acerca, y con ella el temor echa raíces en los corazones de Omna; todo apunta a que se acerca el Gran Diluvio profetizado a terminar con toda vida en Omna. La devoción de Akri hacia Imbwe, Diosa del Todo que partió los mares para crear Omna, pareciera no tener límites. Es por ello que, en medio de todo el caos y terror, ella busca el socorro de Imbwe. Pero cuando Imbwe le niega a la gente de Omna su misericordia, Akri debe arreglárselas por sí misma. Dispuesta a arriesgarlo todo por su gente, Akri emprende un viaje para separar a Imbwe en las dos entidades que forman el Todo, la Vida y la Muerte, para así pasar a cuchillo a la Muerte.
+//Pruebalo en Itch.io
+//
+
 class ProjectCard extends React.Component{
 
     render(){
