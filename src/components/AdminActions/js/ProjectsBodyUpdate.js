@@ -2,7 +2,8 @@ import React from 'react';
 
 import {MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBTextArea, MDBFile} from 'mdb-react-ui-kit';
 
-function UpdateProject() {
+class UpdateProject extends React.Component {
+  render() {
     return (
       <MDBContainer fluid>
         <video src='/videos/P2_AdobeExpress.mp4' autoPlay loop muted />
@@ -110,5 +111,5 @@ function UpdateProject() {
       </MDBContainer>
     );
   }
-  
+}
   export default UpdateProject;
