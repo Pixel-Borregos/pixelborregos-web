@@ -1,8 +1,27 @@
 import React from 'react';
-
+import { CreateDocument } from '../../../js/db/dbOperations';
 import {MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBTextArea, MDBFile} from 'mdb-react-ui-kit';
 
 class CreateProject extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      title:"",
+      category:"",
+      gameDesc:"",
+      imageUrl:"",
+      linkItch:"",
+      linkDoc:""
+    }
+  }
+  updateValue = (event) =>{
+    this.setState({[event.target.name]:event.target.value})
+  }
+
+  createEntry = () =>{
+    CreateDocument("pixelProjects", this.state);
+  }
+
   render() {  
     return (
         <MDBContainer fluid>
@@ -22,7 +41,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='Name of the Game' size='lg' id='form1' type='text'/>
+                      <MDBInput label='Name of the Game' size='lg' id='form1' type='text' name='title' onChange={this.updateValue} />
                     </MDBCol>
     
                   </MDBRow>
@@ -36,7 +55,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='Game Genre' size='lg' id='form2' type='email'/>
+                      <MDBInput label='Game Genre' size='lg' id='form2' type='text' name='category' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -50,7 +69,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBTextArea label="What's the game about?" id='textAreaExample' rows={3} />
+                      <MDBTextArea label="What's the game about?" id='textAreaExample' rows={3} name='gameDesc' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -64,7 +83,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='Enter a image address' size='lg' id='form2' type='email'/>
+                      <MDBInput label='Enter a image address' size='lg' id='form2' type='text' name='imageUrl' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -78,7 +97,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='game@itch.io' size='lg' id='form2' type='email'/>
+                      <MDBInput label='game@itch.io' size='lg' id='form2' type='text' name='linkItch' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -92,14 +111,14 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='example@example.com' size='lg' id='form2' type='email'/>
+                      <MDBInput label='example@example.com' size='lg' id='form2' type='text' name='linkDoc' onChange={this.updateValue} />
                     </MDBCol>
     
                   </MDBRow>
     
                   <hr className="mx-n3" />
     
-                  <MDBBtn className='my-4' size='lg'>Add Project</MDBBtn>
+                  <MDBBtn className='my-4' size='lg' onClick = {this.createEntry} href="/Admin/Actions">Add Project</MDBBtn>
     
                 </MDBCardBody>
               </MDBCard>
