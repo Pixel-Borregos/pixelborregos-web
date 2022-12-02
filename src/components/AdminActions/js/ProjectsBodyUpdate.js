@@ -56,19 +56,18 @@ class UpdateProject extends React.Component {
                 </MDBRow>
   
                 <hr className="mx-n3" />
-  
-                <MDBRow className='align-items-center pt-4 pb-3'>
-  
-                  <MDBCol md='3' className='ps-5'>
-                    <h6 className="mb-0">Upload Image</h6>
-                  </MDBCol>
-  
-                  <MDBCol md='9' className='pe-5'>
-                    <MDBFile size='lg' id='customFile' />
-                    <div className="small text-muted mt-2">Upload Videogame Cover. Max file size 50 MB</div>
-                  </MDBCol>
-  
-                </MDBRow>
+
+                  <MDBRow className='align-items-center pt-4 pb-3'>
+    
+                    <MDBCol md='3' className='ps-5'>
+                      <h6 className="mb-0">Image URL</h6>
+                    </MDBCol>
+    
+                    <MDBCol md='9' className='pe-5'>
+                      <MDBInput label='Enter a image address' size='lg' id='form2' type='email'/>
+                    </MDBCol>
+    
+                  </MDBRow>
 
                 <hr className="mx-n3" />
   
