@@ -23,6 +23,7 @@ class ProjectsBodyUpdate extends React.Component{
                                     title={result[i].title}
                                     genre={result[i].genre}
                                     concept={result[i].concept}
+                                    docid={result[i].id}
                                     update={<IconLabelButtons />}
                         /></Col>);
                     }

@@ -16,10 +16,6 @@ class UpdateNews extends React.Component {
     this.setState({[event.target.name]:event.target.value})
   }
 
-  createEntry = () =>{
-    CreateDocument("pixelBlog",this.state);
-  }
-
   updateEntry = () =>{
     updateDoc("pixelBlog", this.props.docId, this.state);
   }

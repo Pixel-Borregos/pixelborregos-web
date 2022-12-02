@@ -19,8 +19,8 @@ class NewsBody extends React.Component{
                     for(let i = 0; i < result.length;i++){
                         news.push(<NewsPreview
                                     title={result[i].title}
-                                    body={result[i].body}
-                        />);
+                                    body={result[i].description}
+                        />); 
                     }
                     return news;
                 } 

@@ -20,6 +20,7 @@ class NewsAdmin extends React.Component{
                         news.push(<NewsPreview
                                     title={result[i].title}
                                     body={result[i].body}
+                                    docid={result[i].id}
                                     update={<IconLabelButtons />}
                         />);
                     }
