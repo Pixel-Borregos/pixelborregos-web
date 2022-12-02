@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Container,Row} from "react-bootstrap"
 
 import NewsPreview from "./newsPreview";
-import { ReadDocument } from "../../../../../js/db/dbOperations";
+import { ReadDocument, UpdateDocument } from "../../../../../js/db/dbOperations";
 import IconLabelButtons from "./crudButtons";
 
 class NewsAdmin extends React.Component{
@@ -11,6 +11,9 @@ class NewsAdmin extends React.Component{
         this.state = {
         }
     }
+
+    updateEntry = (docID,entryData) =>
+        UpdateDocument("pixelBlog", docID, entryData);
 
     getNews =async () =>{
         let newsInfo =  await ReadDocument("pixelBlog")
@@ -21,7 +24,12 @@ class NewsAdmin extends React.Component{
                                     title={result[i].title}
                                     body={result[i].body}
                                     docid={result[i].id}
-                                    update={<IconLabelButtons />}
+                                    update={<IconLabelButtons 
+                                                title={result[i].title}
+                                                body={result[i].body}
+                                                docid={result[i].id}
+                                                updateEntry = {this.updateEntry}
+                                            />}
                         />);
                     }
                     return news;

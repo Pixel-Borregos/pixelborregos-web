@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBTextArea, MDBFile} from 'mdb-react-ui-kit';
-import { CreateDocument } from '../../../js/db/dbOperations';
-import { updateDoc } from 'firebase/firestore';
+import { UpdateDocument } from '../../../js/db/dbOperations';
 
 class UpdateNews extends React.Component {
   constructor(props){
@@ -17,7 +16,7 @@ class UpdateNews extends React.Component {
   }
 
   updateEntry = () =>{
-    updateDoc("pixelBlog", this.props.docId, this.state);
+    this.props.updateEntry()
   }
 
   render() {

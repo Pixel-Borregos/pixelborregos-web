@@ -6,13 +6,16 @@ import "../style/aboutUsBody.css";
 
 import ProjectCard from "./ProjectsCard";
 import ProjectsTextSection from "./ProjectsTextSection";
-import { ReadDocument } from "../../../../../js/db/dbOperations";
+import { ReadDocument,UpdateDocument } from "../../../../../js/db/dbOperations";
 class ProjectsBodyUpdate extends React.Component{
     constructor(props){
         super(props);
         this.state = {
         }
     }
+
+    updateEntry = (docID,entryData) =>
+        UpdateDocument("pixelProjects", docID, entryData);
 
     getProjects =async () =>{
         let projectsInfo =  await ReadDocument("pixelProjects")
@@ -24,7 +27,11 @@ class ProjectsBodyUpdate extends React.Component{
                                     genre={result[i].genre}
                                     concept={result[i].concept}
                                     docid={result[i].id}
-                                    update={<IconLabelButtons />}
+                                    update={<IconLabelButtons 
+                                        title={result[i].title}
+                                        genre={result[i].genre}
+                                        concept={result[i].concept}
+                                        docid={result[i].id}/>}
                         /></Col>);
                     }
                     return projects;
