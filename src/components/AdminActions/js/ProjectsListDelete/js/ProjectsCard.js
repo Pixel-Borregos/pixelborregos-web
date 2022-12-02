@@ -1,7 +1,6 @@
 import React from "react"
 import {Card,Col, ListGroup, Button} from "react-bootstrap"
 import CardHeader from "react-bootstrap/esm/CardHeader"
-import IconLabelButtons from "./crudButtons";
 
 import "../style/aboutUsTeamCard.css"
 
@@ -58,7 +57,7 @@ class ProjectCard extends React.Component{
                         </h4>
                     </a>
                     </Card.Body>
-                    <IconLabelButtons />
+                    {this.props.delete}
                 </Card>
         )
     }

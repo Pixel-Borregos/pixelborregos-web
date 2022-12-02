@@ -22,7 +22,7 @@ class NewsPreview extends React.Component{
                         >  
                         </div>
                     </Accordion.Body>
-                    <IconLabelButtons />
+                    {this.props.delete}
                </Accordion.Item>
             </Accordion>
     

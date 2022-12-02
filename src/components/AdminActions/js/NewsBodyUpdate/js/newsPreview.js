@@ -1,7 +1,6 @@
 import React from "react";
 import {Image, Accordion} from "react-bootstrap"
 import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
-import IconLabelButtons from "./crudButtons"; 
 
 import "../style/newsCard.css"
 class NewsPreview extends React.Component{
@@ -22,10 +21,9 @@ class NewsPreview extends React.Component{
                         >  
                         </div>
                     </Accordion.Body>
-                    <IconLabelButtons />
+                    {this.props.update}
                </Accordion.Item>
             </Accordion>
-    
         )
     }
 }

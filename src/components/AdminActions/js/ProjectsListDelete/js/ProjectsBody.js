@@ -23,6 +23,7 @@ class ProjectsBodyDelete extends React.Component{
                                     title={result[i].title}
                                     genre={result[i].genre}
                                     concept={result[i].concept}
+                                    delete={<IconLabelButtons />}
                         /></Col>);
                     }
                     return projects;

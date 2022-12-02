@@ -3,6 +3,7 @@ import {Col, Container,Row} from "react-bootstrap"
 
 import NewsPreview from "./newsPreview";
 import { ReadDocument } from "../../../../../js/db/dbOperations";
+import IconLabelButtons from "./crudButtons";
 
 class NewsAdmin extends React.Component{
     constructor(props){
@@ -19,6 +20,7 @@ class NewsAdmin extends React.Component{
                         news.push(<NewsPreview
                                     title={result[i].title}
                                     body={result[i].body}
+                                    update={<IconLabelButtons />}
                         />);
                     }
                     return news;
