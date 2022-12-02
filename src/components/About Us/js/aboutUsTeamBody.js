@@ -17,6 +17,7 @@ class AboutUsTeamBody extends React.Component{
             fontFamily:'DotGothic16,sans-serif',
             fontWeight: '900'
         }
+        
         return(
             <Container fluid>
                 <Row>
@@ -43,7 +44,7 @@ class AboutUsTeamBody extends React.Component{
                         role = "Vicepresidente"
                         descriptionA = {
                             "Actualmente es Intern en patio21. Se encarga de la logística de los evenetos del grupo y" +
-                            "de dirigir a las personas que colaboran en la organizacion de estos."                   
+                            " de dirigir a las personas que colaboran en la organizacion de estos."                   
                         }
 
                         descriptionB = {
@@ -51,86 +52,7 @@ class AboutUsTeamBody extends React.Component{
                         }
                     />
                 </Row>
-                <br></br>
-                <Row>
-                    <AboutUsTeamCard
-                        name = "Paloma Villalobos"
-                        role = "Narrativa"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "César Cisneros"
-                        role = "Composición Musical"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "Frida Aranda"
-                        role = "Efectos de Sonido"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                </Row>
-
-                <Row>
-                    <AboutUsTeamCard
-                        name = "Daniela Acosta"
-                        role = "Arte y Modelado 3D"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "Rodrigo Peña"
-                        role = "Narrativa"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "Valeria Paulín"
-                        role = "Imagen y Redes Sociales"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                </Row>
-                <Row>
-                    <AboutUsTeamCard
-                        name = "Jesús ???"
-                        role = "Arte y Modelado 3D"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "Mario Falcón"
-                        role = "Narrativa"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                    <AboutUsTeamCard
-                        name = "José Juan"
-                        role = "Finanzas"
-                        descriptionA = {
-                            "Futuro SWE en Microsoft. Le apasiona mucho el diseño de "+
-                            "videojuegos la IA de NPCs."
-                        }
-                    />
-                </Row>
+               
             </Container>
         )
     }

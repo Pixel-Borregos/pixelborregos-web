@@ -9,7 +9,7 @@ import { ReadDocument } from "../../../js/db/dbOperations";
 class ProjectsBody extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
+        this.state = {  
         }
     }
 
@@ -22,6 +22,8 @@ class ProjectsBody extends React.Component{
                                     title={result[i].title}
                                     genre={result[i].genre}
                                     concept={result[i].concept}
+                                    itch={result[i].itch}
+                                    notion={result[i].notion}
                         /></Col>);
                     }
                     return projects;

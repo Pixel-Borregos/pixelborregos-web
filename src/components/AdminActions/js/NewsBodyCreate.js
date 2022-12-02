@@ -34,7 +34,7 @@ class NewsBodyCreate extends React.Component {
                 <MDBRow className='align-items-center pt-4 pb-3'>
   
                   <MDBCol md='12' className='ps-5'>
-                    <h2 className="mb-0">Title of News</h2> <br></br>
+                    <h2 className="mb-0">Title</h2> <br></br>
                   </MDBCol>
   
                   <MDBCol md='12' className='pe-5'>
@@ -59,7 +59,7 @@ class NewsBodyCreate extends React.Component {
   
                 <hr className="mx-n3" />
   
-                <MDBBtn className='my-4' size='lg' onClick = {this.createEntry}>Create Entry</MDBBtn>
+                <MDBBtn className='my-4' size='lg' onClick = {this.createEntry} href="/Admin/Actions">Create Entry</MDBBtn>
   
               </MDBCardBody>
             </MDBCard>

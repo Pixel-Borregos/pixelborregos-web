@@ -5,19 +5,15 @@ import {collection, addDoc, setDoc} from "firebase/firestore";
 import { initializeApp } from 'firebase/app';
 
 import PixelNavbar from './components/navbar/js/pixelNavbar';
-import AdminNavbar from './components/navbarAdmin/js/pixelNavbar';
 import AboutUsBody from './components/About Us/js/aboutUsBody';
-import { Container } from 'react-bootstrap';
 import "./App.css";
 import ProjectBody from './components/ProjectsList/js/ProjectsBody';
 // import ProjectBigBody from './components/Projects/js/projectsBigBody';
-import NewsBody from './components/News/js/newsBody';
-import NewsAdmin from './components/NewsAdmin/js/newsBody';
 import Landing from './components/Landing/js/landingBody';
 import ContactUsBody from './components/Contact Us/js/contactUsBody';
 import LogIn from './components/Admin/js/LogIn';
 import AdminActionsBody from './components/AdminOptions/js/AdminOptionsBody';
-import AddDocument, { DeleteDocument, ReadDocument, UpdateDocument } from './js/db/dbOperations';
+
 import NewsBigBody from './components/News/js/newsBigBody';
 import NewsBodyCreate from './components/AdminActions/js/NewsBodyCreate';
 import UpdateNews from './components/AdminActions/js/NewsBodyUpdate';
