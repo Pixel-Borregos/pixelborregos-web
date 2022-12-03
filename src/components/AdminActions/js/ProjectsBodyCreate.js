@@ -118,7 +118,7 @@ class CreateProject extends React.Component {
     
                   <hr className="mx-n3" />
     
-                  <MDBBtn className='my-4' size='lg' onClick = {this.createEntry} href="/Admin/Actions">Add Project</MDBBtn>
+                  <MDBBtn className='my-4' size='lg' onClick = {this.createEntry}>Add Project</MDBBtn>
     
                 </MDBCardBody>
               </MDBCard>

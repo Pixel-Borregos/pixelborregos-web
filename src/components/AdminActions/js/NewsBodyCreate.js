@@ -17,7 +17,8 @@ class NewsBodyCreate extends React.Component {
   }
 
   createEntry = () =>{
-    CreateDocument("pixelBlog",this.state);
+    CreateDocument("pixelBlog", this.state).then(
+    );
   }
   render(){
     return(
@@ -59,7 +60,7 @@ class NewsBodyCreate extends React.Component {
   
                 <hr className="mx-n3" />
   
-                <MDBBtn className='my-4' size='lg' onClick = {this.createEntry} href="/Admin/Actions">Create Entry</MDBBtn>
+                <MDBBtn className='my-4' size='lg' onClick = {this.createEntry} >Create Entry</MDBBtn>
   
               </MDBCardBody>
             </MDBCard>

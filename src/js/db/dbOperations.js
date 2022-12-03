@@ -11,6 +11,7 @@ export async function CreateDocument(targetCollection,docData){
                 docData
             );
         console.log("DOCUMENT: ", docRef.id);
+        window.location.href = "/Admin/Actions" 
     }catch
     {
         console.log("Eror Adding " + targetCollection)
