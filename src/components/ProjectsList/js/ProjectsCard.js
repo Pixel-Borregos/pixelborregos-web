@@ -31,10 +31,13 @@ class ProjectCard extends React.Component{
             color:"#4cddeb",
             fontWeight:'300'
         }
-
+        console.log(this.props.title)
+        console.log(this.props.itch)
+        console.log(this.props.notion)
+        console.log(this.props.imageUrl)
         return(
                 <Card style={{marginBottom:"10%"}}>
-                    <Card.Img src="/images/aboutus.jpg"/>
+                    <Card.Img src={this.props.notion} alt="Pixel Borregos Project" />
                     <CardHeader style={titleStyle}>
                         {this.props.title}
                     </CardHeader>
@@ -45,17 +48,17 @@ class ProjectCard extends React.Component{
                             {this.props.concept}
                         </h5>
 
-                        <a hidden={this.props.itch == null}> 
+                        <a href={this.props.itch} hidden={this.props.itch == null}> 
                             <h4 style = {buttonTextStyle}>
                                 Pruebalo en Itch.io
                             </h4>
                         </a>
                     <br></br><br></br>
-                    <a hidden = {this.props.notion == null}> 
+                    {/* <a hidden = {this.props.notion == null}> 
                         <h4 style = {buttonTextStyle} >
                             Checa la documentación
                         </h4>
-                    </a>
+                    </a> */}
                     </Card.Body>
                 </Card>
         )

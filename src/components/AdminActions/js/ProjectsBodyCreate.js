@@ -7,11 +7,11 @@ class CreateProject extends React.Component {
     super(props);
     this.state={
       title:"",
-      category:"",
-      gameDesc:"",
+      genre:"",
+      concept:"",
       imageUrl:"",
-      linkItch:"",
-      linkDoc:""
+      itch:"",
+      notion:""
     }
   }
   updateValue = (event) =>{
@@ -55,7 +55,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='Game Genre' size='lg' id='form2' type='text' name='category' onChange={this.updateValue}/>
+                      <MDBInput label='Game Genre' size='lg' id='form2' type='text' name='genre' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -69,7 +69,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBTextArea label="What's the game about?" id='textAreaExample' rows={3} name='gameDesc' onChange={this.updateValue}/>
+                      <MDBTextArea label="What's the game about?" id='textAreaExample' rows={3} name='concept' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -83,7 +83,7 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='Enter a image address' size='lg' id='form2' type='text' name='imageUrl' onChange={this.updateValue}/>
+                      <MDBInput label='Enter a image address' size='lg' id='form2' type='url' name='notion' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
@@ -97,12 +97,12 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='game@itch.io' size='lg' id='form2' type='text' name='linkItch' onChange={this.updateValue}/>
+                      <MDBInput label='game@itch.io' size='lg' id='form2' type='text' name='itch' onChange={this.updateValue}/>
                     </MDBCol>
     
                   </MDBRow>
 
-                  <hr className="mx-n3" />
+                  {/* <hr className="mx-n3" />
     
                   <MDBRow className='align-items-center pt-4 pb-3'>
     
@@ -111,10 +111,10 @@ class CreateProject extends React.Component {
                     </MDBCol>
     
                     <MDBCol md='9' className='pe-5'>
-                      <MDBInput label='example@example.com' size='lg' id='form2' type='text' name='linkDoc' onChange={this.updateValue} />
+                      <MDBInput label='example@example.com' size='lg' id='form2' type='text' name='notion' onChange={this.updateValue} />
                     </MDBCol>
     
-                  </MDBRow>
+                  </MDBRow> */}
     
                   <hr className="mx-n3" />
     
